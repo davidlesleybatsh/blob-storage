@@ -1,0 +1,41 @@
+{
+  "name": "blob-storage",
+  "version": "1.0.0",
+  "description": "Blob Storage of different types (Abstract)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --detectOpenHandles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidlesleybatsh/blob-storage.git"
+  },
+  "author": "David Lesley Batsh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidlesleybatsh/blob-storage/issues"
+  },
+  "homepage": "https://github.com/davidlesleybatsh/blob-storage#readme",
+  "dependencies": {
+    "@babel/preset-typescript": "^7.17.12",
+    "@types/jest": "^28.1.1",
+    "@types/node": "^17.0.41",
+    "abstract-blob-store": "^3.3.5",
+    "bucket-ts": "^1.0.5",
+    "bucket-ts-folder": "^1.0.3",
+    "fs-blob-store": "^6.0.0",
+    "jest": "^28.1.1",
+    "s3-blob-store": "^4.1.1"
+  },
+  "jest": {
+    "verbose": true,
+    "transform": {
+      ".*": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts)$",
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ]
+  }
+}
